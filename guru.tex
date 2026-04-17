@@ -1,6 +1,6 @@
 \documentclass[12pt,openany]{book}
 
-% 1. ലേഔട്ട് & ഗ്രാഫിക്സ്
+% 1. Layout & Graphics
 \usepackage[inner=20mm,outer=15mm,top=20mm,bottom=15mm]{geometry}
 \usepackage{wrapfig}
 \usepackage{caption}
@@ -8,7 +8,7 @@
 \usepackage[export]{adjustbox}
 %\graphicspath{{./images/}}
 
-% 2. ഭാഷാ സെറ്റിംഗ്സ് (XeLaTeX-നും Pandoc-നും വേണ്ടി)
+% 2. Language settings (for XeLaTeX and Pandoc)
 \usepackage{iftex}
 \ifxetex
 \usepackage{fontspec}
@@ -26,22 +26,22 @@
 \usepackage[T1]{fontenc}
 \fi
 
-% 3. ടെക്സ്റ്റ് ഫോർമാറ്റിംഗ്
+% 3. Text formatting
 \usepackage{anyfontsize}
 \usepackage{setspace}
 \usepackage{color}
 \usepackage{quoting}
 \usepackage{pdfpages}
 
-% 4. ശ്ലോകങ്ങൾക്കുള്ള കസ്റ്റം എൻവയറോൺമെന്റ്
+% 4. Custom environment for verses
 \newenvironment{myverse}
 {\begin{quoting}[leftmargin=3em, rightmargin=3em, vskip=2ex, indentfirst=false, font=small]}
 	{\end{quoting}}
 
-% 5. ഹൈപ്പർലിങ്കുകൾ
+% 5. Hyperlinks
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
 
-% അനാവശ്യ ഗ്യാപ്പുകൾ കുറയ്ക്കാൻ
+% To reduce unnecessary gaps
 \setlength{\abovecaptionskip}{-2pt} 
 
 \pagestyle{plain}
